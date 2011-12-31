@@ -111,7 +111,7 @@
 (column-number-mode t)
 
 ;; Display line numbers on the buffer
-(global-linum-mode t)
+;; (global-linum-mode t)
 
 ;; Setup flyspell 
 (flyspell-prog-mode)
@@ -144,4 +144,3 @@
 
 ;; recently opened files...
 (recentf-mode t)
- 
