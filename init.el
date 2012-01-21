@@ -12,9 +12,9 @@
                  (cons "." (expand-file-name "~/.trash/emacs-backups/"))))
 
 ;; Screw it just dont use them...
+(setq backup-inhibited t)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
-
 
 ;; Make things pretty
 (require 'color-theme)
@@ -22,6 +22,13 @@
   '(progn
      (color-theme-initialize)
      (color-theme-subtle-hacker)))
+
+
+;; Line by Line scrolling (so smoooth)
+(setq scroll-step 1)
+
+;; Mouse wheel scrolling
+(mouse-wheel-mode t)
 
 ;; Load up autocomplete
 (require 'auto-complete)
