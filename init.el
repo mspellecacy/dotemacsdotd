@@ -23,6 +23,15 @@
      (color-theme-initialize)
      (color-theme-subtle-hacker)))
 
+;; Because fuck MacOSX thats why.
+;; This ONLY exists to return proper home/end key behavior.
+;; GRR!
+(define-key global-map [M-home] 'beginning-of-buffer)
+(define-key global-map [C-home] 'beginning-of-buffer)
+(define-key global-map [home] 'beginning-of-line)
+(define-key global-map [M-end] 'end-of-buffer)
+(define-key global-map [C-end] 'end-of-buffer)
+(define-key global-map [end] 'end-of-line)
 
 ;; Line by Line scrolling (so smoooth)
 (setq scroll-step 1)
