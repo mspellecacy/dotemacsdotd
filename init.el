@@ -41,7 +41,7 @@
 
 ;; Load up autocomplete
 (require 'auto-complete)
-(add-to-list 'ac-dictionary-directories "~/emacs/extras/auto-complete/dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/extras/auto-complete/dict")
 (require 'auto-complete-config)
 (ac-config-default)
 
