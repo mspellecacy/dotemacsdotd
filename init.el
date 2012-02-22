@@ -53,6 +53,7 @@
 
 ;; just load lua now..
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(autoload 'scala-mode "scala-mode" "scala editing mode." t)
 
 ;; add a bunch of supported modes to autoload on open.
 (setq auto-mode-alist (append 
@@ -65,6 +66,7 @@
 			 ("\\.lua$" . lua-mode)
 			 ("\\.asm$" . asm-mode)
 			 ("\\.sql$" . sql-mode)
+			 ("\\.scala$" . scala-mode)
 			 ("\\.jsp$" . java-mode))
 		       auto-mode-alist))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
@@ -160,3 +162,17 @@
 
 ;; recently opened files...
 (recentf-mode t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
